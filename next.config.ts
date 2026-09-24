@@ -1,7 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      { source: "/privacy", destination: "/privacy-policy", permanent: true },
+      {
+        source: "/data-deletion",
+        destination: "/account-deletion",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
