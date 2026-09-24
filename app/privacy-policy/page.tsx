@@ -3,11 +3,9 @@ import { LegalHeader } from "../components/LegalHeader";
 import { SiteFooter } from "../components/SiteFooter";
 import {
   LegalCallout,
-  LegalCode,
   LegalEmail,
   LegalHero,
   LegalList,
-  LegalPlaceholder,
   LegalSection,
   LegalSubheading,
   LegalToc,
@@ -65,12 +63,6 @@ export default function PrivacyPolicyPage() {
           <div className="grid gap-x-8 gap-y-1.5 rounded-2xl border border-brand-100 bg-brand-50/50 p-5 text-sm sm:grid-cols-[auto_1fr]">
             <span className="font-semibold text-brand-900">App name</span>
             <span>Kamakshi Fresh (Delivery Partner)</span>
-            <span className="font-semibold text-brand-900">
-              Package / App ID
-            </span>
-            <span>
-              <LegalCode>com.foxwelai.kfdelpartnerapp</LegalCode>
-            </span>
             <span className="font-semibold text-brand-900">Website</span>
             <span>
               <a
@@ -317,10 +309,8 @@ export default function PrivacyPolicyPage() {
                 <LegalEmail address="delivery@kamakshifresh.com" />
               </>,
               <>
-                Postal address:{" "}
-                <LegalPlaceholder>
-                  Insert company legal name and registered address
-                </LegalPlaceholder>
+                Postal address: Kamakshi Fresh, Magadi Road, Bangalore,
+                Karnataka, India
               </>,
             ]}
           />
